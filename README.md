@@ -11,3 +11,12 @@ windows 10
 python==
 
 #The required base packages
+joblib,
+
+#The example to using built model
+# download the model with pkl as local lication
+import joblib      
+# 加载 TF-IDF 模型     
+#built the input variables X_test
+model_RF = joblib.load('example.pkl')
+y_predict = model_RF.predict(X_test)
