@@ -19,6 +19,7 @@ import joblib
 
 #Load the saved soil dielectric constant model  
 model_RF = joblib.load('example.pkl')
+
 #built the input variables X_test
 X_text = [,,,,]
 y_predict = model_RF.predict(X_test)
