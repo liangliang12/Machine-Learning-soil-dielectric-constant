@@ -48,9 +48,14 @@ the pathway to retrieve soil moisture or salinity using the developed retrieval 
 import joblib      
 
 ##Load the saved soil dielectric constant model  
-model_RF = joblib.load('example.pkl')
+model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
 
 ##built the input variables X_test
+
+#the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties, the different model has different input parameters
+#the detailed description of model input parameters can be found in the file readme.txt in the folder "SM_retrieval_model"
+#
+
 X_text = [,,,,]
 #the soil properties input parameter X_text = [moisture, salinity, frequency, Sandy, Clay, rou_s, rou_b]
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
