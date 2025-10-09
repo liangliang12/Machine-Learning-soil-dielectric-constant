@@ -1,1 +1,27 @@
-
+#Introduction about developed retrieval model
+SMRetrieval Cband RealSsm.plk
+SMRetrieval_lmaginary.plk
+SMRetrieval lmaginarySsm.plk
+SMRetrieval Real.plk
+SMRetrieval_Reallmaginary.plk
+SMRetrieval_ReallmaginarySsm.plk
+SMRetrieval RealSsm.plk
+SSmRetrieval lmaginary.plk
+SSmRetrieval lmaginarySM.plk
+SSmRetrieval Real.plk
+SSmRetrieval Reallmaginary.plk
+SSmRetrieval ReallmaginaryS.plk
+SSmRetrieval_RealSM.plk
+SsmRetrieval_Cband010_lmaginary.plk
+SsmRetrieval Cband010 lmaginarySM.plk
+SsmRetrieval Cband010 Real.plk
+SsmRetrieval_Cband010_Reallmaginary.plk
+SsmRetrieval Cband010 ReallmaginarySM.plk
+SsmRetrieval Cband010 RealSi.plk
+SsmRetrieval Cband lmaginary.plk
+SsmRetrieval_Cband_lmaginarySM.plk
+SsmRetrieval_Cband Real.plk
+SsmRetrieval Cband Reallmaginary.plk
+SsmRetrieval Cband ReallmaginarySM.plk
+SsmRetrieval_Cband RealSM.plk
+readme_retrievalmodel.txt
