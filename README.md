@@ -1,5 +1,5 @@
 # Machine-Learning-soil-dielectric-constant
-A machine learning dielectric constant could used to simulate soil mixture medium soil properties
+A Universal and Practical Soil Dielectric Constant Model constructed based on machine learning could used to simulate soil mixture medium dielectric properties and retrieve soil water content and salinity content
 
 ## introduction
 The build soil dielectric constant model can be used in an border application conditions. Specifically, the operating frequency range is 0.4–20 GHz, the soil moisture content range is 0.05–0.4 m³/m³, and the soil salinity content range is 0–100 g/kg.
@@ -14,6 +14,7 @@ python==
 joblib,
 
 ## The example to using built model
+```
 #download the model with pkl as local lication
 import joblib      
 
@@ -23,3 +24,4 @@ model_RF = joblib.load('example.pkl')
 ##built the input variables X_test
 X_text = [,,,,]
 y_predict = model_RF.predict(X_test)
+```
