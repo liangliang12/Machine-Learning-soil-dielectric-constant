@@ -11,7 +11,7 @@ windows 10,<br>
 python==3.11,<br>
 other python maybe could  
 
-##The required base packages
+##The required base packages,<br>
 joblib,
 
 ## The example to using soil dielectric constant predicted models
@@ -31,7 +31,10 @@ model_RF = joblib.load('example.pkl')
 ##built the input variables X_test
 X_text = [,,,,]
 #the soil properties input parameter X_text = [moisture, salinity, frequency, Sandy, Clay, rou_s, rou_b]
-#moisture: soil moisture content, salinity: soil salinity content, frequency: microwave frequency, Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
+
+#moisture: soil moisture content, salinity: soil salinity content, frequency: microwave frequency,
+#Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
+
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³),
 
 DC_real = model_RF.predict(X_test)
@@ -55,11 +58,17 @@ model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
 ##built the input variables X_test
 
 #the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties, the different model has different input parameters
+
 #A detailed description of these parameters is provided in the readme.txt file within the SM_retrieval_model folder.
-#This table shows the input parameters for the widely-used retrieval model 'SMRetrieval_ReallmaginarySsm.pkl'. 
+
+#This table shows the input parameters for the widely-used retrieval model 'SMRetrieval_ReallmaginarySsm.pkl'.
 
 X_text = [,,,,]
 #the soil properties input parameter X_text = [real, imaginary, frequency, salinity, Sandy,  Clay, rou_s, rou_b]
+
+#real: real part of soil dielectric constant,imaginary: imaginary part of soil dielectric constant, salinity: soil salinity content, frequency: microwave frequency,
+#Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
+
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
 SM_predict = model_RF.predict(X_test)
 ```
