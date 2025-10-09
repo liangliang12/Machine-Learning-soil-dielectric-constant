@@ -14,7 +14,8 @@ other python maybe could
 ##The required base packages
 joblib,
 
-## The example to using built model
+## The example to using soil dielectric constant predicted models
+
 ```
 #download the model with pkl as local lication
 import joblib      
@@ -28,7 +29,8 @@ X_text = [,,,,]
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
 y_predict = model_RF.predict(X_test)
 ```
-## The example to using built model
+
+## The example to using developed soil moisture and salinity retrieval models
 ```
 #download the model with pkl as local lication
 import joblib      
