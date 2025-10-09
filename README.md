@@ -42,7 +42,8 @@ DC_real = model_RF.predict(X_test)
 
 ## The example to using developed soil moisture and salinity retrieval models
 
-the retrieval model can be used to retrieve soil moisture and salinity based on the real imaginary part of the soil dielectric constant prediced model and other soil properties
+##the retrieval model can be used to retrieve soil moisture and salinity based on the real imaginary part of 
+the soil dielectric constant prediced model and other soil properties
 
 the developed soil dielectric constant models were saved in the Folder "SM_retrieval_model"
 
@@ -57,7 +58,8 @@ model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
 
 ##built the input variables X_test
 
-#the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties, the different model has different input parameters
+#the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties,
+the different model has different input parameters
 
 #A detailed description of these parameters is provided in the readme.txt file within the SM_retrieval_model folder.
 
@@ -66,7 +68,8 @@ model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
 X_text = [,,,,]
 #the soil properties input parameter X_text = [real, imaginary, frequency, salinity, Sandy,  Clay, rou_s, rou_b]
 
-#real: real part of soil dielectric constant,imaginary: imaginary part of soil dielectric constant, salinity: soil salinity content, frequency: microwave frequency,
+#real: real part of soil dielectric constant,imaginary: imaginary part of soil dielectric constant,
+#salinity: soil salinity content, frequency: microwave frequency,
 #Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
 
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
