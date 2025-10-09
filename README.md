@@ -2,9 +2,9 @@
 A Universal and Practical Soil Dielectric Constant Model constructed based on machine learning could used to simulate soil mixture medium dielectric properties and retrieve soil water content and salinity content
 
 ## introduction
-The build soil dielectric constant model can be used in an border application conditions. Specifically, the operating frequency range is 0.4–20 GHz, the soil moisture content range is 0.05–0.4 m³/m³, and the soil salinity content range is 0–100 g/kg.
+The build soil dielectric constant model can be used in an border application conditions. Specifically, the operating frequency range is 0.4–20 GHz, the soil moisture content range is 0.05–0.4 m³/m³, and the soil salinity content range is 0–100 g/kg,<br>
 
-These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties.
+These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties,<br>
 
 ##The underlying foundational environment,<br>
 windows 10,<br>
@@ -15,8 +15,10 @@ other python maybe could
 joblib,
 
 ## The example to using soil dielectric constant predicted models
+
 the soil dielectric constant model can be devide as the real part of soil dielectric constant model and imaginary part of the soil dielectric constant prediced model
 the developed soil dielectric constant models were saved in the Folder "Forward_models"
+
 the pathway to predict real or imaginary of soil dielectric constant using the developed soil dielectric constant model
 
 ```
@@ -34,9 +36,12 @@ DC_real = model_RF.predict(X_test)
 ```
 
 ## The example to using developed soil moisture and salinity retrieval models
+
 the retrieval model can be used to retrieve soil moisture and salinity based on the real imaginary part of the soil dielectric constant prediced model and other soil properties
-the developed soil dielectric constant models were saved in the Folder "Forward_models"
-the pathway to predict real or imaginary of soil dielectric constant using the developed soil dielectric constant model
+
+the developed soil dielectric constant models were saved in the Folder "SM_retrieval_model"
+
+the pathway to retrieve soil moisture or salinity using the developed retrieval model
 
 ```
 #download the model with pkl as local lication
