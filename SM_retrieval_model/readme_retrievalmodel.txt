@@ -27,7 +27,6 @@ SMRetrieval_lmaginary.plk is the soil moisture retrieval model with imaginary pa
 ##model7
 SMRetrieval_lmaginarySsm.plk is the soil moisture retrieval model with imaginary part of soil dielectric constant, microwave frequency, salinity content, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
-
 ##model8
 SMRetrieval_Real.plk is the soil moisture retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction, specific density and bulk density, applicable to the all band.
 
@@ -38,99 +37,99 @@ SMRetrieval_Reallmaginary.plk is the soil moisture retrieval model with real and
 SMRetrieval_ReallmaginarySsm.plk is the soil moisture retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, salinity content, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model11
-SMRetrieval_RealSsm.plk
+SMRetrieval_RealSsm.plk is the soil moisture retrieval model with real part of soil dielectric constant, microwave frequency, salinity content, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model12
-SSmRetrieval_lmaginary.plk
+SSmRetrieval_lmaginary.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model13
-SSmRetrieval_ImaginarySM.plk
+SSmRetrieval_ImaginarySM.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model14
-SSmRetrieval_Real.plk
+SSmRetrieval_Real.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model15
-SSmRetrieval_Reallmaginary.plk
+SSmRetrieval_Reallmaginary.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model16
-SSmRetrieval_ReallmaginarySM...
+SSmRetrieval_ReallmaginarySM.plk  is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model17
-SSmRetrieval_RealSM.plk
+SSmRetrieval_RealSM.plk  is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model18
-SMRetrieval_Cband RealSsm.plk
+SMRetrieval_Cband_RealSsm.plk is the soil moisture retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model19
-SMRetrieval_lmaginary.plk
+SMRetrieval_lmaginary.plk is the soil moisture retrieval model with imaginary part of soil dielectric constant, microwave frequency,salinity content, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model20
-SMRetrieval_lmaginarySsm.plk
+SMRetrieval_lmaginarySsm.plk is the soil moisture retrieval model with imaginary part of soil dielectric constant, microwave frequency,salinity content, sand fraction, clay fraction,specific density and bulk density.
 
 ##model21
-SMRetrieval_Real.plk
+SMRetrieval_Real.plk is the soil moisture retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density.
 
 ##model22
-SMRetrieval_Reallmaginary.plk
+SMRetrieval_Reallmaginary.plk is the soil moisture retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density.
 
 ##model23
-SMRetrieval_ReallmaginarySsm.plk
+SMRetrieval_ReallmaginarySsm.plk is the soil moisture retrieval model with real and imaginary part of soil dielectric constant, microwave frequency,salinity content, sand fraction, clay fraction,specific density and bulk density.
 
 ##model24
-SMRetrieval_RealSsm.plk
+SMRetrieval_RealSsm.plk is the soil moisture retrieval model with real part of soil dielectric constant, microwave frequency,salinity content, sand fraction, clay fraction,specific density and bulk density.
 
 ##model25
-SSmRetrieval_lmaginary.plk
+SSmRetrieval_lmaginary.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model26
-SSmRetrieval_lmaginarySM.plk
+SSmRetrieval_lmaginarySM.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model27
-SSmRetrieval_Real.plk
+SSmRetrieval_Real.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model28
-SSmRetrieval_Reallmaginary.plk
+SSmRetrieval_Reallmaginary.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model29
-SSmRetrieval_ReallmaginaryS.plk
+SSmRetrieval_ReallmaginarySM.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model30
-SSmRetrieval_RealSM.plk
+SSmRetrieval_RealSM.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the all band.
 
 ##model31
-SsmRetrieval_Cband010_lmaginary.plk
+SsmRetrieval_Cband010_lmaginary.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model32
-SsmRetrieval_Cband010 lmaginarySM.plk
+SsmRetrieval_Cband010_lmaginarySM.plk  is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model33
-SsmRetrieval_Cband010 Real.plk
+SsmRetrieval_Cband010_Real.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model34
-SsmRetrieval_Cband010_Reallmaginary.plk
+SsmRetrieval_Cband010_Reallmaginary.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model35
-SsmRetrieval_Cband010 ReallmaginarySM.plk
+SsmRetrieval_Cband010_ReallmaginarySM.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model36
-SsmRetrieval_Cband010 RealSi.plk
+SsmRetrieval_Cband010_RealSM.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band and salinity has a reange of 0-10g/kg.
 
 ##model37
-SsmRetrieval_Cband lmaginary.plk
+SsmRetrieval_Cband_lmaginary.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model38
-SsmRetrieval_Cband_lmaginarySM.plk
+SsmRetrieval_Cband_lmaginarySM.plk is the soil salinity retrieval model with imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model39
-SsmRetrieval_Cband Real.plk
+SsmRetrieval_Cband_Real.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model40
-SsmRetrieval_Cband Reallmaginary.plk
+SsmRetrieval_Cband_Reallmaginary.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model41
-SsmRetrieval_Cband ReallmaginarySM.plk
+SsmRetrieval_Cband_ReallmaginarySM.plk is the soil salinity retrieval model with real and imaginary part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 ##model42
-SsmRetrieval_Cband RealSM.plk
+SsmRetrieval_Cband_RealSM.plk is the soil salinity retrieval model with real part of soil dielectric constant, microwave frequency, soil moisture,sand fraction, clay fraction,specific density and bulk density, applicable to the C-band.
 
 
