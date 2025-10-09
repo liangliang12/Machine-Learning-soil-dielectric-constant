@@ -16,8 +16,9 @@ joblib,
 
 ## The example to using soil dielectric constant predicted models
 the soil dielectric constant model can be devide as the real part of soil dielectric constant model and imaginary part of the soil dielectric constant prediced model
+the developed soil dielectric constant models were saved in the Folder "Forward_models"
+the pathway to predict real or imaginary of soil dielectric constant using the developed soil dielectric constant model
 
-the pathway to predict real or imaginary of soil dielectric constant
 ```
 #download the model with pkl as local lication
 import joblib      
@@ -33,6 +34,9 @@ DC_real = model_RF.predict(X_test)
 ```
 
 ## The example to using developed soil moisture and salinity retrieval models
+the retrieval model can be used to retrieve soil moisture and salinity based on the real imaginary part of the soil dielectric constant prediced model and other soil properties
+the developed soil dielectric constant models were saved in the Folder "Forward_models"
+the pathway to predict real or imaginary of soil dielectric constant using the developed soil dielectric constant model
 
 ```
 #download the model with pkl as local lication
