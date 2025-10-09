@@ -15,7 +15,9 @@ other python maybe could
 joblib,
 
 ## The example to using soil dielectric constant predicted models
+the soil dielectric constant model can be devide as the real part of soil dielectric constant model and imaginary part of the soil dielectric constant prediced model
 
+the pathway to predict real or imaginary of soil dielectric constant
 ```
 #download the model with pkl as local lication
 import joblib      
@@ -27,7 +29,7 @@ model_RF = joblib.load('example.pkl')
 X_text = [,,,,]
 #the soil properties input parameter X_text = [moisture, salinity, frequency, Sandy, Clay, rou_s, rou_b]
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
-y_predict = model_RF.predict(X_test)
+DC_real = model_RF.predict(X_test)
 ```
 
 ## The example to using developed soil moisture and salinity retrieval models
