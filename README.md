@@ -53,8 +53,8 @@ model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
 ##built the input variables X_test
 
 #the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties, the different model has different input parameters
-#the detailed description of model input parameters can be found in the file readme.txt in the folder "SM_retrieval_model"
-#
+#A detailed description of these parameters is provided in the readme.txt file within the SM_retrieval_model folder.
+#This table shows the input parameters for the widely-used retrieval model 'SMRetrieval_ReallmaginarySsm.pkl'. 
 
 X_text = [,,,,]
 #the soil properties input parameter X_text = [moisture, salinity, frequency, Sandy, Clay, rou_s, rou_b]
