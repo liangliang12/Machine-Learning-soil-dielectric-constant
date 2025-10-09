@@ -1,5 +1,5 @@
 #Introduction about developed retrieval model
-the model name build rules: In the model "SMRetrieval_Cband_lmaginarySsm.plk"
+Model Naming Rules: In the model "SMRetrieval_Cband_lmaginarySsm.plk"
 "SM" is the retrieve objective surface information
 "Cband" is the model property microwave frequency bands
 "Imaginary" is the imaginary part of soil dielectric constant
