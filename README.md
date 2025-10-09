@@ -6,9 +6,10 @@ The build soil dielectric constant model can be used in an border application co
 
 These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties.
 
-#The underlying foundational environment\<br>
-windows 10
-python==
+##The underlying foundational environment,<br>
+windows 10,<br>
+python==3.11,<br>
+other python maybe could  
 
 ##The required base packages
 joblib,
@@ -23,5 +24,7 @@ model_RF = joblib.load('example.pkl')
 
 ##built the input variables X_test
 X_text = [,,,,]
+#the soil properties input parameter X_text = [moisture, salinity, frequency, Sandy, Clay, rou_s, rou_b]
+#the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
 y_predict = model_RF.predict(X_test)
 ```
