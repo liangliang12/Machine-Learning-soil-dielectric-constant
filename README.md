@@ -75,7 +75,7 @@ X_text = [,,,,]
 #the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
 SM_predict = model_RF.predict(X_test)
 ```
-#Reference
-M. C. Dobson, F. T. Ulaby, M. T. Hallikainen et al., “Microwave dielectric behavior of wet soil-Part2: Dielectric mixing models,” IEEE Transactions on Geoscience and Remote Sensing, vol. 23, no. 1, pp. 35-46, 1985.
-Y. Wu, W. Wang, S. Zhao et al., “Dielectric properties of saline soils and an improved dielectric model in C-band,” IEEE Transactions on Geoscience and Remote Sensing, vol. 53, no. 1, pp. 440-452, 2014.
+##Reference,<br>
+M. C. Dobson, F. T. Ulaby, M. T. Hallikainen et al., “Microwave dielectric behavior of wet soil-Part2: Dielectric mixing models,” IEEE Transactions on Geoscience and Remote Sensing, vol. 23, no. 1, pp. 35-46, 1985.,<br>
+Y. Wu, W. Wang, S. Zhao et al., “Dielectric properties of saline soils and an improved dielectric model in C-band,” IEEE Transactions on Geoscience and Remote Sensing, vol. 53, no. 1, pp. 440-452, 2014.,<br>
 G. C. Topp, J. L. Davis, and A. P. Annan, “Electromagnetic determination of soil water content: Measurements in coaxial transmission lines,” Water resources research, vol. 16, no. 3, pp. 574-582, 1980.
