@@ -12,7 +12,11 @@ python==3.11,<br>
 other python maybe could  
 
 ##The required base packages,<br>
-joblib,
+joblib      1.2.0
+numpy       1.26.4
+pandas      2.1.4
+sklearn     1.2.2
+matplotlib  3.8.0
 
 ## The example to using soil dielectric constant predicted models
 
