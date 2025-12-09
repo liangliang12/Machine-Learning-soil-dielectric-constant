@@ -6,12 +6,12 @@ The build soil dielectric constant model can be used in an border application co
 
 These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties,<br>
 
-##The underlying foundational environment,<br>
-windows 10,<br>
-python==3.11,<br>
-other python maybe could  
+##The underlying foundational environment<br>
+windows 10<br>
+python==3.11<br>
 
-##The required base packages and recommended versions,<br>
+
+##The required base packages and recommended versions<br>
 joblib      1.2.0,<br>
 numpy       1.26.4,<br>
 pandas      2.1.4,<br>
