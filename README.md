@@ -28,9 +28,9 @@ python==3.11<br>
 **matplotlib**  3.8.0<br>
 
 **Model Naming Convention:** <br>
-Models in the Forward_models directory are for predicting the real and imaginary parts of the soil dielectric constant.<br>
+Models in the Forward_models directory are for predicting the real (Real_model) and imaginary (Imaginary_model) parts of the soil dielectric constant.<br>
 
-For inversion models (e.g., SMRetrieval_Cband_Real), the name follows this structure:<br>
+For Retrieval models (e.g., SMRetrieval_Cband_Real), the name follows this structure:<br>
 
 Prefix (Target Variable): SM stands for Soil Moisture content; Ssc stands for Soil Salinity Content.<br>
 
