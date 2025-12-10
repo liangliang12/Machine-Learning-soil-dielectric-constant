@@ -7,11 +7,11 @@ The build soil dielectric constant model can be used in an border application co
 These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties,<br>
 
 ##The model materials introduction<br>
-Datasets:       The Datasets folder contains a sample dataset that can be used to verify whether the model works properly.
-EXample:        The Example folder contains sample data and example Python scripts for the soil dielectric constant real-part model.
-Forward_models:
-Ssc_Retrieval_Model:
-Ssc_Retrieval_Model:
+Datasets:           The Datasets folder contains a sample dataset that can be used to verify whether the model works properly.<br>
+EXample:            The Example folder contains sample data and example Python scripts for the soil dielectric constant real-part model.<br>
+Forward_models:     The Forward_models folder includes predictive models for the real and imaginary parts of the soil dielectric constant, along with corresponding example Python scripts for their use.<br>
+SM_Retrieval_Model: The SM Retrieval_Model folder contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.
+Ssc_Retrieval_Model: The SscRetrieval_Model folder contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.
 
 ##The underlying foundational environment<br>
 windows 10<br>
