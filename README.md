@@ -1,7 +1,7 @@
 # Machine-Learning-soil-dielectric-constant
 A Universal and Practical Soil Dielectric Constant Model constructed based on machine learning could used to simulate soil mixture medium dielectric properties and retrieve soil water content and salinity content
 
-## introduction
+## Introduction
 The build soil dielectric constant model can be used in an border application conditions. Specifically, the operating frequency range is 0.2–20 GHz, the soil moisture content range is 0.05–0.4 m³/m³, and the soil salinity content range is 0–100 g/kg,<br>
 
 These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties,<br>
@@ -26,6 +26,8 @@ numpy       1.26.4<br>
 pandas      2.1.4<br>
 sklearn     1.2.2<br>
 matplotlib  3.8.0<br>
+
+##Methods and Steps for Using the Models<br>
 
 ## The example to using soil dielectric constant predicted models
 
