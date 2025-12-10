@@ -28,11 +28,11 @@ python==3.11<br>
 **matplotlib**  3.8.0<br>
 
 **Methods and Steps for Using the Models**<br>
-1. Download the required models based on your research objectives and available data.
-2. Load the models by referring to the corresponding example codes and proceed to achieve your goals.
-3. There are two ways to use the models:
-One is to compile the properties of the samples to be predicted into a separate file for batch prediction of the real and imaginary parts of the dielectric constant, as well as for retrieving soil moisture or salinity from the dielectric constant (corresponding to # Multi-Sample Batch Prediction for Soil Properties in the example code).
-The other is to individually predict the properties of a single soil sample by inputting the sample attributes into the script to predict the real and imaginary parts of the dielectric constant and retrieve soil moisture or salinity from the dielectric constant (corresponding to #Single-Soil-Sample Prediction in the example code).
+1. Download the required models based on your research objectives and available data.<br>
+2. Load the models by referring to the corresponding example codes and proceed to achieve your goals.<br>
+3. There are two ways to use the models:<br>
+One is to compile the properties of the samples to be predicted into a separate file for batch prediction of the real and imaginary parts of the dielectric constant, as well as for retrieving soil moisture or salinity from the dielectric constant (corresponding to # Multi-Sample Batch Prediction for Soil Properties in the example code).<br>
+The other is to individually predict the properties of a single soil sample by inputting the sample attributes into the script to predict the real and imaginary parts of the dielectric constant and retrieve soil moisture or salinity from the dielectric constant (corresponding to #Single-Soil-Sample Prediction in the example code).<br>
 
 ## The example to using soil dielectric constant predicted models
 
