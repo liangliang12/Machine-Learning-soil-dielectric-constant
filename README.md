@@ -39,7 +39,7 @@ The other is to individually predict the properties of a single soil sample by i
 the soil dielectric constant model can be devide as the real part of soil dielectric constant model and imaginary part of the soil dielectric constant prediced model
 the developed soil dielectric constant models were saved in the Folder "Forward_models"
 
-the pathway to predict real or imaginary of soil dielectric constant using the developed soil dielectric constant model
+the pathway to predict real part of soil dielectric constant using the developed soil dielectric constant model
 
 ```
 #download the model with pkl as local lication
@@ -117,33 +117,75 @@ the soil dielectric constant prediced model and other soil properties
 
 the developed soil dielectric constant models were saved in the Folder "SM_retrieval_model"
 
-the pathway to retrieve soil moisture or salinity using the developed retrieval model
+the pathway to retrieve soil moisture using the developed retrieval model
 
 ```
 #download the model with pkl as local lication
-import joblib      
+import joblib   
+import numpy as np  
+import pandas as pd 
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+############################################################################################################
+## The introduction of model input parameters 
+# real:      The real part of soil dielectric constant
+# imaginary: The imaginary part of soil dielectric constant
+# Salinity:  Soil salinity content (0 - 100 g/kg)
+# Frequency: Microwave frequency (0.2 - 20 GHz)
+# Sandy:     Soil sand fraction(0 - 1)
+# Clay:      Soil clay fraction(0 - 1)
+# rou_s:     Soil specific dendity 
+# rou_b:     Soil bulk dendity 
+#
+##The introduction of model output parameters 
+# Moisture: the predicted Soil moisture content 
 
-##Load the saved soil dielectric constant model  
-model_RF = joblib.load('SMRetrieval_ReallmaginarySsm.pkl')
+############################################################################################################
+# Multi-Sample Batch Prediction for Soil Properties
+##Load the saved model  
+# This is an example of a predictive model for soil moisture content.
+# model_input_path is the address of the data storage folder
+model_input_path = r'...\SMRetrieval_RealImaginarySsc.plk'
+model_RF = joblib.load(model_input_path)
 
+#Load the example dataset
+# input_path_file is the address of the data storage folder
+input_path_file = r'...\DCdataset_sample.csv'
+data = pd.read_csv(input_path_file)
+keys = data.keys()
+data = data.dropna()
+# choose the model parameters
+X = data[['real','imaginary', 'salinity', 'frequency','Sandy', 'Clay', 'rou_s', 'rou_b']]
+# choose the model prediction parameters
+yy = data['moisture']  
+#split example dataset as the train-samples and test-samples
+X_train, X_test, y_train, y_test = train_test_split(X, yy, test_size=0.7, random_state=42)
+# predict the real part of soil dielectric constant 
+y_predict = model_RF.predict(X_test)
+#
+plt.figure(figsize=(7, 5), dpi=300)
+plt.scatter(y_test, y_predict)
+plt.xlabel('The True Value')
+plt.ylabel('The Predicted Value')
+plt.show()
+
+############################################################################################################
+#Single-Soil-Sample Prediction
 ##built the input variables X_test
 
-#the retrieval model including numerous pattern of retrieve soil moisture or salinity based on soil dielectric properties,
-the different model has different input parameters
+X = {'real':[16.9],'imaginary':[9.9], 'salinity':[10], 'frequency':[5.5],'Sandy': [0.46], 'Clay':[0.097], 'rou_s':[2.65], 'rou_b':[1.35]}
+if (X['frequency'][0] < 0.2) or ((X['frequency'][0] > 20)):
+    print('This model is not applicable within this frequency range.')
+if ((X['salinity'][0] > 100)):
+    print('This model is not applicable within this salinity range.')
+X = pd.DataFrame(X)
+y_predict = model_RF.predict(X)
 
-#A detailed description of these parameters is provided in the readme.txt file within the SM_retrieval_model folder.
-
-#This table shows the input parameters for the widely-used retrieval model 'SMRetrieval_ReallmaginarySsm.pkl'.
-
-X_text = [,,,,]
-#the soil properties input parameter X_text = [real, imaginary, frequency, salinity, Sandy,  Clay, rou_s, rou_b]
-
-#real: real part of soil dielectric constant,imaginary: imaginary part of soil dielectric constant,
-#salinity: soil salinity content, frequency: microwave frequency,
+#moisture: soil moisture content, salinity: soil salinity content, frequency: microwave frequency,
 #Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
 
-#the unit of these input parameters are: moisture(m³/m³), salinity(kg/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(kg/m³), rou_b(kg/m³), 
-SM_predict = model_RF.predict(X_test)
+#the unit of these input parameters are: moisture(m³/m³), salinity(g/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(g/m³), rou_b(g/cm³),
+
 ```
 ##Reference,<br>
 M. C. Dobson, F. T. Ulaby, M. T. Hallikainen et al., “Microwave dielectric behavior of wet soil-Part2: Dielectric mixing models,” IEEE Transactions on Geoscience and Remote Sensing, vol. 23, no. 1, pp. 35-46, 1985.,<br>
