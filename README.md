@@ -12,7 +12,7 @@ These soil dielectric constant models were built based on Random Forest algorith
 **EXample**:           contains sample data and example Python scripts for the soil dielectric constant real-part model.<br>
 **Forward_models**:    includes predictive models for the real and imaginary parts of the soil dielectric constant, along with corresponding example Python scripts for their use.<br>
 **SM_Retrieval_Model**: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
-**Ssc_Retrieval_Model**: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
+**Ssc_Retrieval_Model**: contains soil salinity content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
 **The Basic_python_package**: contains the required Python package files requirements.txt file with exact dependency versions.<br>
 
 **The underlying foundational environment**<br>
