@@ -6,28 +6,28 @@ The build soil dielectric constant model can be used in an border application co
 
 These soil dielectric constant models were built based on Random Forest algorithm through theoptimal model value, which was proven has the high-accuracy to simulating the soil dielectric properties,<br>
 
-###The model materials introduction<br>
+**The model materials introduction**<br>
 
-Datasets:          contains a sample dataset that can be used to verify whether the model works properly.<br>
-EXample:           contains sample data and example Python scripts for the soil dielectric constant real-part model.<br>
-Forward_models:    includes predictive models for the real and imaginary parts of the soil dielectric constant, along with corresponding example Python scripts for their use.<br>
-SM_Retrieval_Model: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
-Ssc_Retrieval_Model: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
-The Basic_python_package: contains the required Python package files requirements.txt file with exact dependency versions.<br>
+**Datasets**:          contains a sample dataset that can be used to verify whether the model works properly.<br>
+**EXample**:           contains sample data and example Python scripts for the soil dielectric constant real-part model.<br>
+**Forward_models**:    includes predictive models for the real and imaginary parts of the soil dielectric constant, along with corresponding example Python scripts for their use.<br>
+**SM_Retrieval_Model**: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
+**Ssc_Retrieval_Model**: contains soil moisture content predictive models for various scenarios, along with corresponding example Python scripts for their use.<br>
+**The Basic_python_package**: contains the required Python package files requirements.txt file with exact dependency versions.<br>
 
-##The underlying foundational environment<br>
+**The underlying foundational environment**<br>
 windows 10<br>
 python==3.11<br>
 
 
-##The required base packages and recommended versions<br>
-joblib      1.2.0<br>
-numpy       1.26.4<br>
-pandas      2.1.4<br>
-sklearn     1.2.2<br>
-matplotlib  3.8.0<br>
+**The required base packages and recommended versions**<br>
+**joblib**      1.2.0<br>
+**numpy**      1.26.4<br>
+**pandas**      2.1.4<br>
+**sklearn**     1.2.2<br>
+**matplotlib**  3.8.0<br>
 
-##Methods and Steps for Using the Models<br>
+**Methods and Steps for Using the Models**<br>
 
 ## The example to using soil dielectric constant predicted models
 
