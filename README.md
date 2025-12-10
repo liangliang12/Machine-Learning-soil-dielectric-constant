@@ -27,6 +27,18 @@ python==3.11<br>
 **sklearn**     1.2.2<br>
 **matplotlib**  3.8.0<br>
 
+**Model Naming Convention:** <br>
+Models in the Forward_models directory are for predicting the real and imaginary parts of the soil dielectric constant.<br>
+
+For inversion models (e.g., SMRetrieval_Cband_Real), the name follows this structure:<br>
+
+Prefix (Target Variable): SM stands for Soil Moisture content; Ssc stands for Soil Salinity Content.<br>
+
+Condition/Parameters: Cband indicates the model is only applicable to C-band data; Real indicates that the input required is the real part of the dielectric constant.<br>
+
+**Model Selection Guidance:** <br>
+Choose a model based on your target variable and the data available in your application. Note that model accuracy may vary with different datasets. For specific performance details, please refer to the relevant publications.<br>
+
 **Methods and Steps for Using the Models**<br>
 1. Download the required models based on your research objectives and available data.<br>
 2. Load the models by referring to the corresponding example codes and proceed to achieve your goals.<br>
