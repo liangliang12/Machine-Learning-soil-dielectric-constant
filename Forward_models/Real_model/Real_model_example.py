@@ -18,8 +18,8 @@ import matplotlib.pyplot as plt
 # Frequency: Microwave frequency (0.2 - 20 GHz)
 # Sandy:     Soil sand fraction(0 - 1)
 # Clay:      Soil clay fraction(0 - 1)
-# rou_s:     Soil specific dendity 
-# rou_b:     Soil bulk dendity 
+# rou_s:     Soil specific dendity(g/cm³)  
+# rou_b:     Soil bulk dendity (g/cm³) 
 #
 ##The introduction of model output parameters 
 # real: the predicted real part of soil dielectric constant
@@ -70,4 +70,5 @@ y_predict = model_RF.predict(X)
 #Sandy: soil sandy fraction, Clay: soil clay fraction, rou_s: soil specific density, rou_b: soil bulk density
 
 #the unit of these input parameters are: moisture(m³/m³), salinity(g/kg), frequency(GHz), Sandy(%), Clay(%), rou_s(g/m³), rou_b(g/cm³),
+
 
